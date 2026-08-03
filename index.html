@@ -490,6 +490,64 @@
             font-size: 14.5px;
         }
 
+        .photo-marquee {
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 28px;
+            padding: 20px 0;
+            -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: scroll-left 20s linear infinite;
+            will-change: transform;
+        }
+
+        .frame {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 240px;
+            border: 1px solid rgba(255, 255, 255, .08);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: .25s;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+
+        .frame:hover {
+            border-color: rgba(56, 189, 248, .5);
+            transform: translateY(-5px) translateZ(0);
+        }
+
+        .frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        @media(max-width:768px) {
+            .frame {
+                width: 150px;
+                height: 190px;
+            }
+        }
+
         footer {
             text-align: center;
             padding: 24px;
@@ -602,7 +660,7 @@
         </div>
 
     </section>
-    
+
     <!-- HIGHLIGHTS -->
 
     <section class="section" id="highlights">
@@ -1193,6 +1251,35 @@
             <a href="mailto:shagunshaw2006@gmail.com" target="_blank">Email</a>
             <a href="https://github.com/ShagunShaw" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/shagun-shaw-b887492a4" target="_blank">LinkedIn</a>
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO MARQUEE -->
+    <section class="photo-marquee" id="glimpses">
+
+        <div class="marquee-track">
+
+            <div class="frame"><img src="profile1.jpg" alt=""></div>
+            <div class="frame"><img src="profile2.jpg" alt=""></div>
+            <div class="frame"><img src="profile7.jpg" alt=""></div>
+            <div class="frame"><img src="profile3.jpg" alt=""></div>
+            <div class="frame"><img src="profile4.jpg" alt=""></div>
+            <div class="frame"><img src="profile5.jpg" alt=""></div>
+            <div class="frame"><img src="profile6.jpg" alt=""></div>
+            <div class="frame"><img src="profile8.jpg" alt=""></div>
+
+            <!-- duplicate set for seamless loop -->
+            <div class="frame"><img src="profile1.jpg" alt=""></div>
+            <div class="frame"><img src="profile2.jpg" alt=""></div>
+            <div class="frame"><img src="profile7.jpg" alt=""></div>
+            <div class="frame"><img src="profile3.jpg" alt=""></div>
+            <div class="frame"><img src="profile4.jpg" alt=""></div>
+            <div class="frame"><img src="profile5.jpg" alt=""></div>
+            <div class="frame"><img src="profile6.jpg" alt=""></div>
+            <div class="frame"><img src="profile8.jpg" alt=""></div>
+
         </div>
 
     </section>
