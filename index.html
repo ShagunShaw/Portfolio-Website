@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shagun Shaw | Backend & Systems Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --bg-base: #0a0d14;
@@ -671,25 +674,31 @@
             .hero {
                 grid-template-columns: 1fr;
             }
+
             .avatar-container {
                 width: 180px;
                 margin: 0 auto;
             }
+
             .split-grid {
                 grid-template-columns: 1fr;
             }
+
             .nav-links {
                 display: none;
             }
+
             .project-gallery-grid {
                 grid-template-columns: 1fr;
             }
+
             .carousel-item {
                 flex: 0 0 calc((100% - (0.75rem * 1)) / 2);
             }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Nav -->
@@ -715,7 +724,9 @@
                 <span class="hero-subtitle">Hello World 👋 I'm</span>
                 <h1 class="hero-title">Shagun Shaw</h1>
                 <p class="hero-bio">
-                    <strong>Backend & Systems Engineer</strong> specializing in scalable Node.js/TypeScript architectures, custom authentication protocols, and real-time state synchronization engines. Experienced with cloud infrastructure, automated pipelines, and centralized logging.
+                    <strong>Backend & Systems Engineer</strong> specializing in scalable Node.js/TypeScript
+                    architectures, custom authentication protocols, and real-time state synchronization engines.
+                    Experienced with cloud infrastructure, automated pipelines, and centralized logging.
                 </p>
 
                 <div class="badge-list">
@@ -729,7 +740,8 @@
                         <span>Get In Touch</span>
                     </a>
                     <a href="https://github.com/ShagunShaw" target="_blank" class="btn btn-outline">GitHub</a>
-                    <a href="https://www.linkedin.com/in/shagun-shaw-b887492a4" target="_blank" class="btn btn-outline">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/shagun-shaw-b887492a4" target="_blank"
+                        class="btn btn-outline">LinkedIn</a>
                 </div>
             </div>
 
@@ -743,8 +755,6 @@
             <div class="section-header">
                 <h2 class="section-title">Featured Engineering Projects</h2>
             </div>
-
-            
 
             <!-- QuizBlitz -->
             <div class="project-card">
@@ -769,14 +779,14 @@
 
                 <!-- Architectural Diagram Block -->
                 <div class="arch-diagram">
-[Client] ──(HTTPS/WSS)──> [Nginx Reverse Proxy] ──> [Express/PM2 Engine]
-                                                           │
-        ┌───────────────────┬──────────────────────────────┼──────────────────┐
-        ▼                   ▼                              ▼                  ▼
-[Socket.io Engine]  [Custom OAuth 2.0]            [Cron Engine]    [Winston Logging]
-(Isolated Rooms /  (JWT Token Rotation /          (Session Cleanup)       │
- Live State Sync)   HttpOnly Cookies)                                     ▼
-                                                                  [Axiom Cloud]
+                    [Client] ──(HTTPS/WSS)──> [Nginx Reverse Proxy] ──> [Express/PM2 Engine]
+                    │
+                    ┌───────────────────┬──────────────────────────────┼──────────────────┐
+                    ▼ ▼ ▼ ▼
+                    [Socket.io Engine] [Custom OAuth 2.0] [Cron Engine] [Winston Logging]
+                    (Isolated Rooms / (JWT Token Rotation / (Session Cleanup) │
+                    Live State Sync) HttpOnly Cookies) ▼
+                    [Axiom Cloud]
                 </div>
 
                 <!-- QuizBlitz Carousel (10 Images, 4 Visible at once) -->
@@ -784,24 +794,39 @@
                     <button class="carousel-arrow disabled" id="qb-prev">&lt;</button>
                     <div class="carousel-track-wrapper">
                         <div class="carousel-track" id="qb-track">
-                            <div class="carousel-item"><img src="QuizBlitz/img1.png" alt="QuizBlitz Screenshot 1" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img2.png" alt="QuizBlitz Screenshot 2" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img3.png" alt="QuizBlitz Screenshot 3" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img4.png" alt="QuizBlitz Screenshot 4" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img5.png" alt="QuizBlitz Screenshot 5" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img7.jpg" alt="QuizBlitz Screenshot 7" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img8.jpg" alt="QuizBlitz Screenshot 8" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img9.jpg" alt="QuizBlitz Screenshot 9" class="zoomable-img"></div>
-                            <div class="carousel-item"><img src="QuizBlitz/img10.jpg" alt="QuizBlitz Screenshot 10" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img1.png" alt="QuizBlitz Screenshot 1"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img2.png" alt="QuizBlitz Screenshot 2"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img3.png" alt="QuizBlitz Screenshot 3"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img4.png" alt="QuizBlitz Screenshot 4"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img5.png" alt="QuizBlitz Screenshot 5"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img7.jpg" alt="QuizBlitz Screenshot 7"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img8.jpg" alt="QuizBlitz Screenshot 8"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img9.jpg" alt="QuizBlitz Screenshot 9"
+                                    class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img10.jpg" alt="QuizBlitz Screenshot 10"
+                                    class="zoomable-img"></div>
                         </div>
                     </div>
                     <button class="carousel-arrow" id="qb-next">&gt;</button>
                 </div>
 
                 <ul class="project-bullets">
-                    <li><strong>Real-Time Sync Engine:</strong> Engineered a custom Socket.io state machine managing isolated room broadcasting, sub-second timer sync, and streak-multiplier score calculations across concurrent quiz rooms.</li>
-                    <li><strong>Custom Security Layer:</strong> Built Google OAuth 2.0 from scratch (without Passport.js), combining signed refresh tokens, httpOnly cookies, and multi-device session handling via unique session tokens.</li>
-                    <li><strong>DevOps &amp; Infrastructure:</strong> Deployed on AWS EC2 behind Nginx reverse proxy with SSL, process monitoring via PM2, and continuous deployment through GitHub Actions. Integrated Winston with Axiom cloud for centralized application logging.</li>
+                    <li><strong>Real-Time Sync Engine:</strong> Engineered a custom Socket.io state machine managing
+                        isolated room broadcasting, sub-second timer sync, and streak-multiplier score calculations
+                        across concurrent quiz rooms.</li>
+                    <li><strong>Custom Security Layer:</strong> Built Google OAuth 2.0 from scratch (without
+                        Passport.js), combining signed refresh tokens, httpOnly cookies, and multi-device session
+                        handling via unique session tokens.</li>
+                    <li><strong>DevOps &amp; Infrastructure:</strong> Deployed on AWS EC2 behind Nginx reverse proxy
+                        with SSL, process monitoring via PM2, and continuous deployment through GitHub Actions.
+                        Integrated Winston with Axiom cloud for centralized application logging.</li>
                 </ul>
             </div>
 
@@ -810,7 +835,8 @@
                 <div class="project-header">
                     <h3 class="project-title">ClickSafe — AI Jobs & Website Scam Detection Engine</h3>
                     <div class="project-links">
-                        <a href="https://github.com/The-Batman-gang/ClickSafe-Backend" target="_blank">🔗 Backend Repo</a>
+                        <a href="https://github.com/The-Batman-gang/ClickSafe-Backend" target="_blank">🔗 Github
+                            Repo</a>
                     </div>
                 </div>
 
@@ -845,9 +871,105 @@
                 </div>
 
                 <ul class="project-bullets">
-                    <li><strong>Backend &amp; AI Engineering:</strong> Solely owned and engineered the entire backend architecture during the HexaFalls2 hackathon, integrating Google's Gemini API for dynamic context processing and automated prompt routing.</li>
-                    <li><strong>Top 5 Recognition:</strong> Built alongside a cross-functional team, securing a Top 5 placement under the "Best Use of Gemini API" track for robust server-side throughput and clean API design.</li>
-                    <li><strong>Scalable API Layer:</strong> Designed modular REST endpoints handling heavy JSON payloads, context formatting, error handling, and structured response parsing for smooth frontend integration.</li>
+                    <li><strong>Backend &amp; AI Engineering:</strong> Solely owned and engineered the entire backend
+                        architecture during the HexaFalls2 hackathon, integrating Google's Gemini API for dynamic
+                        context processing and automated prompt routing.</li>
+                    <li><strong>Top 5 Recognition:</strong> Built alongside a cross-functional team, securing a Top 5
+                        placement under the "Best Use of Gemini API" track for robust server-side throughput and clean
+                        API design.</li>
+                    <li><strong>Scalable API Layer:</strong> Designed modular REST endpoints handling heavy JSON
+                        payloads, context formatting, error handling, and structured response parsing for smooth
+                        frontend integration.</li>
+                </ul>
+            </div>
+
+            <!-- Tech Hunt -->
+            <div class="project-card">
+                <div class="project-header">
+                    <h3 class="project-title">Tech Hunt — Real-Time Treasure Hunt Management System</h3>
+                    <div class="project-links">
+                        <a href="https://github.com/ShagunShaw/tech-hunt" target="_blank">🔗 GitHub Repo</a>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">Express.js</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">Drizzle ORM</span>
+                    <span class="project-tag">Redis</span>
+                    <span class="project-tag">BullMQ</span>
+                    <span class="project-tag">Docker</span>
+                    <span class="project-tag">Zod</span>
+                    <span class="project-tag">Winston</span>
+                    <span class="project-tag">NodeMailer</span>
+                </div>
+
+                <!-- Architectural Diagram Block -->
+                <div class="arch-diagram">
+                    [Client] ──(HTTPS)──> [Express API Layer] ──> [JWT + RBAC Middleware]
+                    │
+                    ┌───────────────────┬──────────────────────┬──────────────────┐
+                    ▼                   ▼                      ▼                  ▼
+                    [Google OAuth 2.0]  [Redis Live State]     [PostgreSQL]       [Winston Logging]
+                    (Auth Code Flow /   (Game Clock / Group    (Drizzle ORM /     │
+                    JWT Access+Refresh)  Formation / Hints)    Durable Records)   ▼
+                                        ▲                       ▲            [Axiom Cloud]
+                                        │                       │
+                                        └───────────┬───────────┘
+                                                     │
+                                              [BullMQ Queue]
+                                                     │
+                                                     ▼
+                                              [Game Worker]
+                                          (Auto-End Job / Finalizes
+                                          Groups in PG + SCAN+UNLINK
+                                          Cleanup in Redis)
+                </div>
+
+                <!-- Tech Hunt Carousel (10 Images, 4 Visible at once) -->
+                <!-- <div class="carousel-container">
+                    <button class="carousel-arrow disabled" id="qb-prev">&lt;</button>
+                    <div class="carousel-track-wrapper">
+                        <div class="carousel-track" id="qb-track">
+                            <div class="carousel-item"><img src="QuizBlitz/img1.png" alt="QuizBlitz Screenshot 1" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img2.png" alt="QuizBlitz Screenshot 2" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img3.png" alt="QuizBlitz Screenshot 3" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img4.png" alt="QuizBlitz Screenshot 4" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img5.png" alt="QuizBlitz Screenshot 5" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img7.jpg" alt="QuizBlitz Screenshot 7" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img8.jpg" alt="QuizBlitz Screenshot 8" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img9.jpg" alt="QuizBlitz Screenshot 9" class="zoomable-img"></div>
+                            <div class="carousel-item"><img src="QuizBlitz/img10.jpg" alt="QuizBlitz Screenshot 10" class="zoomable-img"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-arrow" id="qb-next">&gt;</button>
+                </div> -->
+
+                <ul class="project-bullets">
+                    <li><strong>Real-Time System Architecture:</strong> Engineered a full-stack real-time treasure hunt
+                        management system handling 200+ concurrent participants with role-based access control
+                        (Participant, Admin, Super Admin) and Google OAuth 2.0 implemented from scratch without
+                        Passport.js.</li>
+                    <li><strong>State & Concurrency Management:</strong> Architected a Redis-backed group formation
+                        system with TTL-based auto expiry, atomic INCR for race-condition-free round robin theme
+                        distribution, and single-shot PostgreSQL transaction commit — eliminating partial state
+                        failures.</li>
+                    <li><strong>Custom Security & Auth:</strong> Implemented JWT authentication with access/refresh
+                        token architecture, session-ID based multi-device session management, and RBAC middleware using
+                        higher-order functions — all without third party auth libraries.</li>
+                    <li><strong>Game Progression Engine:</strong> Designed a 6-level QR-based game progression engine
+                        with per-group theme tracking, Redis-cached questions and hints, level-based points system, and
+                        Bull Queue scheduled auto-end job with parallel Redis cleanup.</li>
+                    <li><strong>Database Optimization:</strong> Optimised DB interactions using Drizzle ORM with complex
+                        inner joins, subquery-based single-query membership verification, JSONB session storage, and
+                        PostgreSQL transactions for atomic group + member creation.</li>
+                    <li><strong>Monitoring & Infrastructure:</strong> Integrated Winston structured logging with Axiom
+                        cloud monitoring, rate limiting on sensitive routes, Helmet + CORS security hardening, and
+                        Nodemailer email service for admin workflow notifications.</li>
+                    <li><strong>Async Performance Tuning:</strong> Parallelised question assignment across 6 tech
+                        domains at game start using Promise.all, reducing sequential DB calls to concurrent execution
+                        with O(1) message lookup via JavaScript Map.</li>
                 </ul>
             </div>
 
@@ -870,9 +992,13 @@
                 </div>
 
                 <ul class="project-bullets">
-                    <li><strong>Modular Architecture:</strong> Architected a NestJS backend utilizing custom validation pipes, strict DTOs, and global exception filters for isolated request handling.</li>
-                    <li><strong>Automated Zip Pipelines:</strong> Integrated Multer memory storage and Archiver to dynamic-compress file payloads into single ZIP archives prior to cloud transfer.</li>
-                    <li><strong>Lifecycle Automation &amp; Rate-Limiting:</strong> Engineered background CRON services via <code>@nestjs/schedule</code> for automated purge of expired storage objects, paired with rate-limiting throttling to mitigate API abuse.</li>
+                    <li><strong>Modular Architecture:</strong> Architected a NestJS backend utilizing custom validation
+                        pipes, strict DTOs, and global exception filters for isolated request handling.</li>
+                    <li><strong>Automated Zip Pipelines:</strong> Integrated Multer memory storage and Archiver to
+                        dynamic-compress file payloads into single ZIP archives prior to cloud transfer.</li>
+                    <li><strong>Lifecycle Automation &amp; Rate-Limiting:</strong> Engineered background CRON services
+                        via <code>@nestjs/schedule</code> for automated purge of expired storage objects, paired with
+                        rate-limiting throttling to mitigate API abuse.</li>
                 </ul>
             </div>
         </section>
@@ -935,7 +1061,7 @@
         <!-- Experience & Education Split -->
         <section id="experience">
             <div class="split-grid">
-                
+
                 <!-- Leadership & Awards -->
                 <div>
                     <div class="section-header">
@@ -945,15 +1071,21 @@
                     <div class="timeline-card">
                         <div class="timeline-date">2025 - Present</div>
                         <h3 class="timeline-title">DSA Lead — GDG On Campus TIU</h3>
-                        <div class="timeline-sub"><strong><h3>Google Developer Groups</h3></strong></div>
-                        <p class="timeline-desc">Conducting algorithm sessions and mentoring 100+ peers in Data Structures, Algorithms, and technical interview prep.</p>
+                        <div class="timeline-sub"><strong>
+                                <h3>Google Developer Groups</h3>
+                            </strong></div>
+                        <p class="timeline-desc">Conducting algorithm sessions and mentoring 100+ peers in Data
+                            Structures, Algorithms, and technical interview prep.</p>
                     </div>
 
                     <div class="timeline-card">
                         <div class="timeline-date">2026</div>
                         <h3 class="timeline-title">Top 5 Winner — HexaFalls2 Hackathon</h3>
-                        <div class="timeline-sub"><strong><h3>Track: Best Use of Gemini API</h3></strong></div>
-                        <p class="timeline-desc">Secured Top 5 by designing and implementing the full backend processing system and Gemini API integration for our ClickSafe project.</p>
+                        <div class="timeline-sub"><strong>
+                                <h3>Track: Best Use of Gemini API</h3>
+                            </strong></div>
+                        <p class="timeline-desc">Secured Top 5 by designing and implementing the full backend processing
+                            system and Gemini API integration for our ClickSafe project.</p>
                     </div>
                 </div>
 
@@ -966,8 +1098,12 @@
                     <div class="timeline-card">
                         <div class="timeline-date">2023 - 2027 (Expected)</div>
                         <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h3>
-                        <div class="timeline-sub"><strong><h3>Techno India University • Kolkata</h3></strong></div>
-                        <p class="timeline-desc"><strong>CGPA: 8.98 / 10.0</strong><br>Core coursework in Software Engineering, DBMS, Computer Networks, Operating Systems, and Distributed Backend Architecture.</p>
+                        <div class="timeline-sub"><strong>
+                                <h3>Techno India University • Kolkata</h3>
+                            </strong></div>
+                        <p class="timeline-desc"><strong>CGPA: 8.98 / 10.0</strong><br>Core coursework in Software
+                            Engineering, DBMS, Computer Networks, Operating Systems, and Distributed Backend
+                            Architecture.</p>
                     </div>
                 </div>
 
@@ -979,7 +1115,7 @@
             <div class="section-header">
                 <h2 class="section-title">Keynotes &amp; Communities</h2>
             </div>
-            
+
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="Profile/profile1.jpg" alt="Personal photo 1" class="zoomable-img">
@@ -1197,4 +1333,5 @@
         });
     </script>
 </body>
+
 </html>
